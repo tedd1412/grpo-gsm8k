@@ -1,0 +1,9 @@
+[project]
+name = "grpo-gsm8k"
+version = "0.1.0"
+description = "GRPO fine-tuning of Qwen2.5-1.5B-Instruct on GSM8K, with honest before/after evaluation."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

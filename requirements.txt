@@ -1,0 +1,7 @@
+# Colab already ships torch; install the rest with: pip install -r requirements.txt
+transformers>=4.45
+datasets>=2.20
+accelerate>=0.33
+peft>=0.12
+pytest>=8
+# Phase 3 (training) will add: trl
