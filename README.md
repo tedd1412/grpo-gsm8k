@@ -21,7 +21,7 @@ Fixed eval set: 500 problems from the GSM8K test split (`shuffle(seed=42)`), nev
 src/
   data.py      load GSM8K, gold extraction, fixed eval set, system prompt
   eval.py      answer parser + accuracy evaluation (run / rescore / show)
-  rewards.py   reward functions (Phase 2)
+  rewards.py   reward functions: correctness 2.0, format 0.5, numeric 0.5
   train.py     GRPO training (Phase 3)
 tests/         parser and reward tests
 results/       per-problem eval outputs (jsonl), summaries, plots
@@ -33,7 +33,7 @@ notes/         GRPO theory notes and the phase logs
 
 ```bash
 pip install -r requirements.txt
-python -m pytest -q                                   # parser sanity tests
+python -m pytest -q                                   # parser + reward tests
 python -m src.eval run --out results/base_eval.jsonl  # needs a GPU (T4 is fine)
 python -m src.eval show results/base_eval.jsonl --only wrong --k 20
 ```

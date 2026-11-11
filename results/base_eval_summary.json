@@ -1,0 +1,23 @@
+{
+  "n": 500,
+  "strict_accuracy": 0.47,
+  "lenient_accuracy": 0.492,
+  "format_compliance": 0.86,
+  "avg_completion_tokens": 221.388,
+  "truncated_rate": 0.016,
+  "config": {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "adapter": null,
+    "eval_set": "test.shuffle(42).select(500)",
+    "limit": null,
+    "decoding": "greedy",
+    "max_new_tokens": 512,
+    "batch_size": 16,
+    "system_prompt": "You are a careful maths tutor. Solve the problem step by step.\nRespond in exactly this format:\n<think>\nyour step-by-step reasoning\n</think>\n<answer>\nthe final numerical answer only, with no units\n</answer>",
+    "seconds": 1947.6,
+    "transformers": "5.22.1",
+    "torch": "2.14.1+cu130",
+    "gpu": "Tesla T4",
+    "timestamp": "2026-11-09 05:13:04"
+  }
+}
